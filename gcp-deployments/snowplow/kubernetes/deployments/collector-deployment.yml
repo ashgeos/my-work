@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snowplow-collector
+  namespace: snowplow
+  labels:
+    app: collector
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: collector
+  template:
+    metadata:
+      labels:
+        app: collector
+    spec:
+      containers:
+      - name: collector
+        image: snowplow/scala-stream-collector-pubsub:2.5.0
+        args:
+          - --config
+          - /snowplow/collector.conf
+        ports:
+        - containerPort: 5000
+        livenessProbe:
+          tcpSocket:
+            port: 5000
+          periodSeconds: 10
+          initialDelaySeconds: 70
+          timeoutSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+        readinessProbe:
+          tcpSocket:
+            port: 5000
+          initialDelaySeconds: 30
+          timeoutSeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          failureThreshold: 8
+        lifecycle:
+          preStop:
+            exec:
+              command: [ "/bin/sleep", "10" ]
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: 1.5
+          limits:
+            memory: "1.5Gi"
+            cpu: 2
+        volumeMounts:
+        - name: collector-config
+          mountPath: /snowplow
+          readOnly: true
+      restartPolicy: Always
+      volumes:
+      - name: collector-config
+        configMap:
+          name: collector-config

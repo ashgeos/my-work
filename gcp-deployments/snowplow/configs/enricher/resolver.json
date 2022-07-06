@@ -1,0 +1,28 @@
+{
+    "schema": "iglu:com.snowplowanalytics.iglu/resolver-config/jsonschema/1-0-0",
+    "data": {
+      "cacheSize": 500,
+      "repositories": [
+        {
+          "name": "Add Hoc Iglu Schema Repository",
+          "priority": 10,
+          "vendorPrefixes": [ "com.snow.ashgeos" ],
+          "connection": {
+            "http": {
+              "uri": "https://storage.googleapis.com/iglu-schemas"
+            }
+          }
+        },
+        {
+          "name": "IAB Spider and Robots Iglu Repository",
+          "priority": 10,
+          "vendorPrefixes": [ "com.iab.snowplow" ],
+          "connection": {
+            "http": {
+              "uri": "https://storage.googleapis.com/iglu-schemas"
+            }
+          }
+        }
+      ]
+    }
+  }

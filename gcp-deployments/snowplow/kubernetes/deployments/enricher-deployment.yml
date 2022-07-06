@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snowplow-enricher
+  namespace: snowplow
+  labels:
+    app: enricher
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: enricher
+  template:
+    metadata:
+      labels:
+        app: enricher
+    spec:
+      containers:
+      - name: enricher
+        image: gcr.io/test-snowplow-project/enricher:2.0.5
+        imagePullPolicy: Always
+        args:
+          - --iglu-config
+          - /snowplow/config/resolver.json
+          - --enrichments
+          - /snowplow/config/enrichments
+          - --config
+          - /snowplow/config/enricher.conf
+        lifecycle:
+          preStop:
+            exec:
+              command: [ "/bin/sleep", "10" ]
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: 1
+          limits:
+            memory: "1.5Gi"
+            cpu: 1.5

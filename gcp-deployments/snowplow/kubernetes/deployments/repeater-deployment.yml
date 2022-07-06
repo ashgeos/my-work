@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snowplow-repeater
+  namespace: snowplow
+  labels:
+    app: repeater
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: repeater
+  template:
+    metadata:
+      labels:
+        app: repeater
+    spec:
+      containers:
+      - name: repeater
+        image: snowplow/snowplow-bigquery-repeater:1.2.0
+        args:
+          - --config
+          - $(LOADER_CONFIG)
+          - --resolver
+          - $(RESOLVER)
+        env:
+          - name: LOADER_CONFIG
+            valueFrom:
+              configMapKeyRef:
+                name: loader-config
+                key: loader_conf
+          - name: RESOLVER
+            valueFrom:
+              configMapKeyRef:
+                name: resolver-config
+                key: resolver_conf
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: 1.5
+          limits:
+            memory: "1.5Gi"
+            cpu: 2                

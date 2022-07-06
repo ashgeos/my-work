@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: collector-ingress
+  namespace: snowplow
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: collector-lb-ip
+    networking.gke.io/managed-certificates: collector-managed-cert
+    kubernetes.io/ingress.allow-http: "false"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  defaultBackend:
+    service:
+      name: collector-service
+      port:
+        number: 8080

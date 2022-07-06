@@ -1,0 +1,13 @@
+{
+    "schema": "iglu:com.snowplowanalytics.snowplow/yauaa_context/jsonschema/1-0-0",
+  
+    "data": {
+  
+      "name": "yauaa_context",
+      "vendor": "com.snowplowanalytics.snowplow",
+      "enabled": true,
+      "parameters": {
+        "cacheSize": 5000
+      }
+    }
+  }

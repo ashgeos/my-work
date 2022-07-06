@@ -1,0 +1,8 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: collector-managed-cert
+  namespace: snowplow
+spec:
+  domains:
+    - v2.pixel.test.com

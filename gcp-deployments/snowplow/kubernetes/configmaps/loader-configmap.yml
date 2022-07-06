@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: loader-config
+  namespace: snowplow
+data:
+  loader_conf: "xyz"
