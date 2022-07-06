@@ -1,0 +1,1495 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "app_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "platform",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "etl_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "collector_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_created_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "event_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "txn_id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name_tracker",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "v_tracker",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "v_collector",
+    "type": "STRING"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "v_etl",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "user_ipaddress",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "user_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "domain_userid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "domain_sessionidx",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "network_userid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_country",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_region",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_city",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_zipcode",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_latitude",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_longitude",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_region_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_isp",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_organization",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_domain",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_netspeed",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_url",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_title",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_referrer",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlhost",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlpath",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlquery",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "page_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlhost",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlpath",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlquery",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_medium",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_source",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_term",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_medium",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_source",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_term",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_content",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_campaign",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "se_category",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "se_action",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "se_label",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "se_property",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "se_value",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_orderid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_affiliation",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_total",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_tax",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_shipping",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_city",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_state",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_country",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_orderid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_sku",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_category",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_price",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_quantity",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "pp_xoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "pp_xoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "pp_yoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "pp_yoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "useragent",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_family",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_version",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_renderengine",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_lang",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_pdf",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_flash",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_java",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_director",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_quicktime",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_realplayer",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_windowsmedia",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_gears",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_features_silverlight",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_cookies",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_colordepth",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_viewwidth",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "br_viewheight",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "os_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "os_family",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "os_manufacturer",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "os_timezone",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_ismobile",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_screenwidth",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_screenheight",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "doc_charset",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "doc_width",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "doc_height",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_currency",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_total_base",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_tax_base",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tr_shipping_base",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_currency",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ti_price_base",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "base_currency",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_timezone",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_clickid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "mkt_network",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "etl_tags",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dvce_sent_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_domain_userid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refr_dvce_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "domain_sessionid",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "derived_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event_vendor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event_format",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event_version",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "event_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "true_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "load_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "uri",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_uri_redirect_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "advertiser_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "banner_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "campaign_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cost",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cost_model",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "impression_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "target_url",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "zone_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_ad_impression_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "browser_ads_ppid",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_ads_provider",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_analytics_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_analytics_provider",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_dmp_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_dmp_provider",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "browser_ncg_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_memtype",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_newsletter_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_newsletter_provider",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_provider",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_aka_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "article_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "article_paid_content_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "article_published_time",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "article_source",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "content_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "section",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subsection",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subsubsection",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subsubsubsection",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subsubsubsubsection",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_article_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_web_page_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "namespace",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "REQUIRED",
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "mode": "REQUIRED",
+            "name": "value",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "data",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_adhoc_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "search_baths_max",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_baths_min",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_beds_max",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_beds_min",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_location",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_price_max",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_price_min",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_property_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "search_type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_research_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "listing_bathrooms",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_bedrooms",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_address",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_city",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_country",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_lat",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_long",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_postcode",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_location_state",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_price",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_property_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_property_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "listing_type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_relisting_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "amp_client_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "domain_userid",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "user_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_dev_amp_snowplow_amp_id_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "amp_page_view_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_dev_amp_snowplow_amp_web_page_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "uri",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_uri_redirect_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "data",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "namespace",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_adhoc_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "device_manufacturer",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "device_model",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "os_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "os_version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "android_idfa",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "apple_idfa",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "apple_idfv",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "carrier",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "network_technology",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "network_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "open_idfa",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_mobile_context_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "session_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "session_index",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "storage_mechanism",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "user_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "first_event_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "previous_session_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_client_session_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "brand_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "business_unit",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "product_build_number",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "product_identifier",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "product_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "product_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "product_version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "advertising_network",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "analytics_account_info",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "analytics_sub_account_info",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_product_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "build",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "version",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_mobile_application_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "id",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "previous_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "previous_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "previous_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "transition_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_mobile_screen_view_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "id",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "activity",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "fragment",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "top_view_controller",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "view_controller",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_mobile_screen_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_mobile_application_install_1_0_0",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "foreground_index",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_foreground_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "background_index",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_background_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "programming_language",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "is_fatal",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "line_number",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "stack_trace",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "thread_id",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "thread_name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_error_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "stack_trace",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_diagnostic_error_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REQUIRED",
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "programming_language",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cause_stack_trace",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "file_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "is_fatal",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "line_column",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "line_number",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "stack_trace",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "thread_id",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "thread_name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_error_1_0_2",
+    "type": "RECORD"
+  }
+]

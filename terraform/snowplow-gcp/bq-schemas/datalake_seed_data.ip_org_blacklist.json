@@ -1,0 +1,7 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "ip_org",
+    "type": "STRING"
+  }
+]

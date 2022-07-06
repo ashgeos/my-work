@@ -1,0 +1,14 @@
+[
+  {
+    "name": "src_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dest_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weight",
+    "type": "FLOAT"
+  }
+]

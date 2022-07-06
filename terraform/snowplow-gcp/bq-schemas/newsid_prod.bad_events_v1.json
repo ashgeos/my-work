@@ -1,0 +1,174 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "schema",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "timestamp",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "vendor",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "version",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "field",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "expectation",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "schemaKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "schemaCriterion",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "messages",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "failure",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "vendor",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "version",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "querystring",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "contentType",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "body",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "collector",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "encoding",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "hostname",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "timestamp",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ipAddress",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "useragent",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "refererUri",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "headers",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "networkUserId",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "payload",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "artifact",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "version",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "processor",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "data",
+    "type": "RECORD"
+  }
+]

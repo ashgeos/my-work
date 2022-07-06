@@ -1,0 +1,46 @@
+[
+  {
+    "name": "src_id",
+    "type": "STRING"
+  },
+  {
+    "name": "src_id_type",
+    "type": "STRING"
+  },
+  {
+    "name": "src_id_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id_type",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "first_seen",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "last_seen",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "days_seen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "original_cluster_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cluster_id",
+    "type": "INTEGER"
+  }
+]

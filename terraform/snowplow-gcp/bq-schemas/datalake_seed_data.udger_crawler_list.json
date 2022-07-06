@@ -1,0 +1,77 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ua_string",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ver",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ver_major",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "class_id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "last_seen",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "respect_robotstxt",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "family",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "family_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "family_homepage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "family_icon",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "vendor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "vendor_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "vendor_homepage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  }
+]

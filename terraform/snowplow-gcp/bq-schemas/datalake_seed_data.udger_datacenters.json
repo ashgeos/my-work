@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "datacenter_id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_from",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ip_to",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "iplong_from",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "iplong_to",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "id",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "homepage",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "processed_data_upto",
+    "type": "DATE"
+  },
+  {
+    "name": "run_on",
+    "type": "DATE"
+  }
+]

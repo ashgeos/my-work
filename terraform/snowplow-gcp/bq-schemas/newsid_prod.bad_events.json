@@ -1,0 +1,30 @@
+[
+  {
+    "name": "failure_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "name": "level",
+        "type": "STRING"
+      },
+      {
+        "name": "message",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "errors",
+    "type": "RECORD"
+  },
+  {
+    "name": "line",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "load_tstamp",
+    "type": "TIMESTAMP"
+  }
+]

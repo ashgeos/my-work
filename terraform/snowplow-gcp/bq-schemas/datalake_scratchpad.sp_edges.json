@@ -1,0 +1,37 @@
+[
+  {
+    "name": "src_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dest_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "first_seen",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "last_seen",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "days_seen",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "name": "browser",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_freq",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "browsers",
+    "type": "RECORD"
+  }
+]

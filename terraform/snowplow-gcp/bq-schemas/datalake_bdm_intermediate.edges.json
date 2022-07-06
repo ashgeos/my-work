@@ -1,0 +1,68 @@
+[
+  {
+    "name": "src_id",
+    "type": "STRING"
+  },
+  {
+    "name": "src_id_type",
+    "type": "STRING"
+  },
+  {
+    "name": "src_id_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id_type",
+    "type": "STRING"
+  },
+  {
+    "name": "dest_id_domain",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "br_family",
+        "type": "STRING"
+      },
+      {
+        "name": "user_fingerprint",
+        "type": "STRING"
+      },
+      {
+        "name": "user_ipaddress",
+        "type": "STRING"
+      },
+      {
+        "name": "ip_organization",
+        "type": "STRING"
+      },
+      {
+        "name": "geo_country",
+        "type": "STRING"
+      },
+      {
+        "name": "geo_region",
+        "type": "STRING"
+      },
+      {
+        "name": "geo_city",
+        "type": "STRING"
+      }
+    ],
+    "name": "device",
+    "type": "RECORD"
+  },
+  {
+    "name": "times_seen",
+    "type": "INTEGER"
+  },
+  {
+    "name": "collector_tstamp",
+    "type": "TIMESTAMP"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "src_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dest_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "weight",
+    "type": "FLOAT"
+  },
+  {
+    "name": "cluster_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "original_cluster_id",
+    "type": "INTEGER"
+  }
+]

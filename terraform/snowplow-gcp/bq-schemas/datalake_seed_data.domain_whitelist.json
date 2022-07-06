@@ -1,0 +1,27 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "domain",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "geo_country",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "brand_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "network_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "bu_name",
+    "type": "STRING"
+  }
+]

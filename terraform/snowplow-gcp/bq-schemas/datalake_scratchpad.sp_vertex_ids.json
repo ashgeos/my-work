@@ -1,0 +1,22 @@
+[
+  {
+    "name": "vid",
+    "type": "INTEGER"
+  },
+  {
+    "name": "id",
+    "type": "STRING"
+  },
+  {
+    "name": "id_type",
+    "type": "STRING"
+  },
+  {
+    "name": "id_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "valid_id",
+    "type": "BOOLEAN"
+  }
+]

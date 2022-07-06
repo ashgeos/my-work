@@ -1,0 +1,834 @@
+[
+  {
+    "name": "app_id",
+    "type": "STRING"
+  },
+  {
+    "name": "platform",
+    "type": "STRING"
+  },
+  {
+    "name": "event",
+    "type": "STRING"
+  },
+  {
+    "name": "event_id",
+    "type": "STRING"
+  },
+  {
+    "name": "txn_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name_tracker",
+    "type": "STRING"
+  },
+  {
+    "name": "v_tracker",
+    "type": "STRING"
+  },
+  {
+    "name": "v_collector",
+    "type": "STRING"
+  },
+  {
+    "name": "v_etl",
+    "type": "STRING"
+  },
+  {
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "name": "user_ipaddress",
+    "type": "STRING"
+  },
+  {
+    "name": "user_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_sessionidx",
+    "type": "INTEGER"
+  },
+  {
+    "name": "network_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_country",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_region",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_city",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_zipcode",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_latitude",
+    "type": "FLOAT"
+  },
+  {
+    "name": "geo_longitude",
+    "type": "FLOAT"
+  },
+  {
+    "name": "geo_region_name",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_isp",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_organization",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_netspeed",
+    "type": "STRING"
+  },
+  {
+    "name": "page_url",
+    "type": "STRING"
+  },
+  {
+    "name": "page_title",
+    "type": "STRING"
+  },
+  {
+    "name": "page_referrer",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlhost",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "name": "page_urlpath",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlquery",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlhost",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "name": "refr_urlpath",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlquery",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_medium",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_source",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_term",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_medium",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_source",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_term",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_content",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_campaign",
+    "type": "STRING"
+  },
+  {
+    "name": "contexts",
+    "type": "STRING"
+  },
+  {
+    "name": "se_category",
+    "type": "STRING"
+  },
+  {
+    "name": "se_action",
+    "type": "STRING"
+  },
+  {
+    "name": "se_label",
+    "type": "STRING"
+  },
+  {
+    "name": "se_property",
+    "type": "STRING"
+  },
+  {
+    "name": "se_value",
+    "type": "FLOAT"
+  },
+  {
+    "name": "unstruct_event",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_orderid",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_affiliation",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_total",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_tax",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_shipping",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_city",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_state",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_country",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_orderid",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_sku",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_name",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_category",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_price",
+    "type": "FLOAT"
+  },
+  {
+    "name": "ti_quantity",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_xoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_xoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_yoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_yoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useragent",
+    "type": "STRING"
+  },
+  {
+    "name": "br_name",
+    "type": "STRING"
+  },
+  {
+    "name": "br_family",
+    "type": "STRING"
+  },
+  {
+    "name": "br_version",
+    "type": "STRING"
+  },
+  {
+    "name": "br_type",
+    "type": "STRING"
+  },
+  {
+    "name": "br_renderengine",
+    "type": "STRING"
+  },
+  {
+    "name": "br_lang",
+    "type": "STRING"
+  },
+  {
+    "name": "br_features_pdf",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_flash",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_java",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_director",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_quicktime",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_realplayer",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_windowsmedia",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_gears",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_silverlight",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_cookies",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_colordepth",
+    "type": "STRING"
+  },
+  {
+    "name": "br_viewwidth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "br_viewheight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "os_name",
+    "type": "STRING"
+  },
+  {
+    "name": "os_family",
+    "type": "STRING"
+  },
+  {
+    "name": "os_manufacturer",
+    "type": "STRING"
+  },
+  {
+    "name": "os_timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "dvce_type",
+    "type": "STRING"
+  },
+  {
+    "name": "dvce_ismobile",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "dvce_screenwidth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dvce_screenheight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "doc_charset",
+    "type": "STRING"
+  },
+  {
+    "name": "doc_width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "doc_height",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tr_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_total_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_tax_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_shipping_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "ti_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_price_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "base_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_clickid",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_network",
+    "type": "STRING"
+  },
+  {
+    "name": "etl_tags",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_domain_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "derived_contexts",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_sessionid",
+    "type": "STRING"
+  },
+  {
+    "name": "event_vendor",
+    "type": "STRING"
+  },
+  {
+    "name": "event_name",
+    "type": "STRING"
+  },
+  {
+    "name": "event_format",
+    "type": "STRING"
+  },
+  {
+    "name": "event_version",
+    "type": "STRING"
+  },
+  {
+    "name": "event_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "name": "etl_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "collector_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "dvce_created_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "dvce_sent_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "refr_device_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "derived_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "true_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "name": "browser_ncg_id",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_dmp_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_dmp_id",
+        "type": "STRING"
+      },
+      {
+        "name": "user_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "user_memtype",
+        "type": "STRING"
+      },
+      {
+        "name": "user_id",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_analytics_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_analytics_id",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_ads_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_ads_ppid",
+        "type": "STRING"
+      },
+      {
+        "name": "user_newsletter_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "user_newsletter_id",
+        "type": "STRING"
+      }
+    ],
+    "name": "context_aka",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "article_id",
+        "type": "STRING"
+      },
+      {
+        "name": "article_source",
+        "type": "STRING"
+      },
+      {
+        "name": "article_published_time",
+        "type": "STRING"
+      },
+      {
+        "name": "content_type",
+        "type": "STRING"
+      },
+      {
+        "name": "article_paid_content_type",
+        "type": "STRING"
+      },
+      {
+        "name": "section",
+        "type": "STRING"
+      },
+      {
+        "name": "subsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsubsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsubsubsection",
+        "type": "STRING"
+      }
+    ],
+    "name": "context_article",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "listing_location_lat",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "listing_location_long",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "listing_location_state",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_bedrooms",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "listing_id",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_address",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_property_type",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_postcode",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_bathrooms",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "listing_location_city",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_country",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_price",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "listing_property_id",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_type",
+        "type": "STRING"
+      }
+    ],
+    "name": "context_relisting",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "search_baths_max",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_price_max",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_property_type",
+        "type": "STRING"
+      },
+      {
+        "name": "search_baths_min",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_beds_max",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_beds_min",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_location",
+        "type": "STRING"
+      },
+      {
+        "name": "search_price_min",
+        "type": "NUMERIC"
+      },
+      {
+        "name": "search_type",
+        "type": "STRING"
+      }
+    ],
+    "name": "context_research",
+    "type": "RECORD"
+  },
+  {
+    "name": "context_other",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "is_duplicate_row",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_valid_event_domain",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_valid_aka_domain",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_suspect_bot",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "acepts_3pc",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "device_id",
+        "type": "STRING"
+      },
+      {
+        "name": "device_id_type",
+        "type": "STRING"
+      },
+      {
+        "name": "time_on_page",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_page_url",
+        "type": "STRING"
+      },
+      {
+        "name": "last_page_title",
+        "type": "STRING"
+      },
+      {
+        "name": "next_page_url",
+        "type": "STRING"
+      },
+      {
+        "name": "next_page_title",
+        "type": "STRING"
+      }
+    ],
+    "name": "staging",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "duplication_row_num",
+        "type": "INTEGER"
+      },
+      {
+        "name": "matched_datacenter",
+        "type": "STRING"
+      },
+      {
+        "name": "matched_crawler",
+        "type": "STRING"
+      },
+      {
+        "name": "first_network_id",
+        "type": "STRING"
+      },
+      {
+        "name": "second_network_id",
+        "type": "STRING"
+      },
+      {
+        "name": "last_ncg_g_id",
+        "type": "STRING"
+      },
+      {
+        "name": "last_collector_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "next_collector_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "last_derived_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "next_derived_tstamp",
+        "type": "TIMESTAMP"
+      }
+    ],
+    "name": "staging_debug",
+    "type": "RECORD"
+  }
+]

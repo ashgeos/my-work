@@ -1,0 +1,1322 @@
+[
+  {
+    "name": "app_id",
+    "type": "STRING"
+  },
+  {
+    "name": "platform",
+    "type": "STRING"
+  },
+  {
+    "name": "event",
+    "type": "STRING"
+  },
+  {
+    "name": "event_id",
+    "type": "STRING"
+  },
+  {
+    "name": "txn_id",
+    "type": "INTEGER"
+  },
+  {
+    "name": "name_tracker",
+    "type": "STRING"
+  },
+  {
+    "name": "v_tracker",
+    "type": "STRING"
+  },
+  {
+    "name": "v_collector",
+    "type": "STRING"
+  },
+  {
+    "name": "v_etl",
+    "type": "STRING"
+  },
+  {
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "name": "user_ipaddress",
+    "type": "STRING"
+  },
+  {
+    "name": "user_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_sessionidx",
+    "type": "INTEGER"
+  },
+  {
+    "name": "network_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_country",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_region",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_city",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_zipcode",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_latitude",
+    "type": "FLOAT"
+  },
+  {
+    "name": "geo_longitude",
+    "type": "FLOAT"
+  },
+  {
+    "name": "geo_region_name",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_isp",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_organization",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_domain",
+    "type": "STRING"
+  },
+  {
+    "name": "ip_netspeed",
+    "type": "STRING"
+  },
+  {
+    "name": "page_url",
+    "type": "STRING"
+  },
+  {
+    "name": "page_title",
+    "type": "STRING"
+  },
+  {
+    "name": "page_referrer",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlhost",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "name": "page_urlpath",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlquery",
+    "type": "STRING"
+  },
+  {
+    "name": "page_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlscheme",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlhost",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlport",
+    "type": "INTEGER"
+  },
+  {
+    "name": "refr_urlpath",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlquery",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_urlfragment",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_medium",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_source",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_term",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_medium",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_source",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_term",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_content",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_campaign",
+    "type": "STRING"
+  },
+  {
+    "name": "se_category",
+    "type": "STRING"
+  },
+  {
+    "name": "se_action",
+    "type": "STRING"
+  },
+  {
+    "name": "se_label",
+    "type": "STRING"
+  },
+  {
+    "name": "se_property",
+    "type": "STRING"
+  },
+  {
+    "name": "se_value",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_orderid",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_affiliation",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_total",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_tax",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_shipping",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_city",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_state",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_country",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_orderid",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_sku",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_name",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_category",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_price",
+    "type": "FLOAT"
+  },
+  {
+    "name": "ti_quantity",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_xoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_xoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_yoffset_min",
+    "type": "INTEGER"
+  },
+  {
+    "name": "pp_yoffset_max",
+    "type": "INTEGER"
+  },
+  {
+    "name": "useragent",
+    "type": "STRING"
+  },
+  {
+    "name": "br_name",
+    "type": "STRING"
+  },
+  {
+    "name": "br_family",
+    "type": "STRING"
+  },
+  {
+    "name": "br_version",
+    "type": "STRING"
+  },
+  {
+    "name": "br_type",
+    "type": "STRING"
+  },
+  {
+    "name": "br_renderengine",
+    "type": "STRING"
+  },
+  {
+    "name": "br_lang",
+    "type": "STRING"
+  },
+  {
+    "name": "br_features_pdf",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_flash",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_java",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_director",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_quicktime",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_realplayer",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_windowsmedia",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_gears",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_features_silverlight",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_cookies",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "br_colordepth",
+    "type": "STRING"
+  },
+  {
+    "name": "br_viewwidth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "br_viewheight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "os_name",
+    "type": "STRING"
+  },
+  {
+    "name": "os_family",
+    "type": "STRING"
+  },
+  {
+    "name": "os_manufacturer",
+    "type": "STRING"
+  },
+  {
+    "name": "os_timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "dvce_type",
+    "type": "STRING"
+  },
+  {
+    "name": "dvce_ismobile",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "dvce_screenwidth",
+    "type": "INTEGER"
+  },
+  {
+    "name": "dvce_screenheight",
+    "type": "INTEGER"
+  },
+  {
+    "name": "doc_charset",
+    "type": "STRING"
+  },
+  {
+    "name": "doc_width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "doc_height",
+    "type": "INTEGER"
+  },
+  {
+    "name": "tr_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "tr_total_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_tax_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "tr_shipping_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "ti_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "ti_price_base",
+    "type": "FLOAT"
+  },
+  {
+    "name": "base_currency",
+    "type": "STRING"
+  },
+  {
+    "name": "geo_timezone",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_clickid",
+    "type": "STRING"
+  },
+  {
+    "name": "mkt_network",
+    "type": "STRING"
+  },
+  {
+    "name": "etl_tags",
+    "type": "STRING"
+  },
+  {
+    "name": "refr_domain_userid",
+    "type": "STRING"
+  },
+  {
+    "name": "domain_sessionid",
+    "type": "STRING"
+  },
+  {
+    "name": "event_vendor",
+    "type": "STRING"
+  },
+  {
+    "name": "event_name",
+    "type": "STRING"
+  },
+  {
+    "name": "event_format",
+    "type": "STRING"
+  },
+  {
+    "name": "event_version",
+    "type": "STRING"
+  },
+  {
+    "name": "event_fingerprint",
+    "type": "STRING"
+  },
+  {
+    "name": "load_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "name": "uri",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_uri_redirect_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "advertiser_id",
+        "type": "STRING"
+      },
+      {
+        "name": "banner_id",
+        "type": "STRING"
+      },
+      {
+        "name": "campaign_id",
+        "type": "STRING"
+      },
+      {
+        "name": "cost",
+        "type": "FLOAT"
+      },
+      {
+        "name": "cost_model",
+        "type": "STRING"
+      },
+      {
+        "name": "impression_id",
+        "type": "STRING"
+      },
+      {
+        "name": "target_url",
+        "type": "STRING"
+      },
+      {
+        "name": "zone_id",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_ad_impression_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_web_page_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "namespace",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "name": "key",
+            "type": "STRING"
+          },
+          {
+            "name": "value",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "data",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_adhoc_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "amp_client_id",
+        "type": "STRING"
+      },
+      {
+        "name": "domain_userid",
+        "type": "STRING"
+      },
+      {
+        "name": "user_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_dev_amp_snowplow_amp_id_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "amp_page_view_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_dev_amp_snowplow_amp_web_page_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "uri",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_uri_redirect_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "data",
+        "type": "STRING"
+      },
+      {
+        "name": "namespace",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_adhoc_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "device_manufacturer",
+        "type": "STRING"
+      },
+      {
+        "name": "device_model",
+        "type": "STRING"
+      },
+      {
+        "name": "os_type",
+        "type": "STRING"
+      },
+      {
+        "name": "os_version",
+        "type": "STRING"
+      },
+      {
+        "name": "android_idfa",
+        "type": "STRING"
+      },
+      {
+        "name": "apple_idfa",
+        "type": "STRING"
+      },
+      {
+        "name": "apple_idfv",
+        "type": "STRING"
+      },
+      {
+        "name": "carrier",
+        "type": "STRING"
+      },
+      {
+        "name": "network_technology",
+        "type": "STRING"
+      },
+      {
+        "name": "network_type",
+        "type": "STRING"
+      },
+      {
+        "name": "open_idfa",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_mobile_context_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "session_id",
+        "type": "STRING"
+      },
+      {
+        "name": "session_index",
+        "type": "INTEGER"
+      },
+      {
+        "name": "storage_mechanism",
+        "type": "STRING"
+      },
+      {
+        "name": "user_id",
+        "type": "STRING"
+      },
+      {
+        "name": "first_event_id",
+        "type": "STRING"
+      },
+      {
+        "name": "previous_session_id",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_snowplow_client_session_1_0_1",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "brand_name",
+        "type": "STRING"
+      },
+      {
+        "name": "business_unit",
+        "type": "STRING"
+      },
+      {
+        "name": "product_build_number",
+        "type": "STRING"
+      },
+      {
+        "name": "product_identifier",
+        "type": "STRING"
+      },
+      {
+        "name": "product_name",
+        "type": "STRING"
+      },
+      {
+        "name": "product_type",
+        "type": "STRING"
+      },
+      {
+        "name": "product_version",
+        "type": "STRING"
+      },
+      {
+        "name": "advertising_network",
+        "type": "STRING"
+      },
+      {
+        "name": "analytics_account_info",
+        "type": "STRING"
+      },
+      {
+        "name": "analytics_sub_account_info",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_newscgp_product_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "build",
+        "type": "STRING"
+      },
+      {
+        "name": "version",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_mobile_application_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "id",
+        "type": "STRING"
+      },
+      {
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "name": "previous_id",
+        "type": "STRING"
+      },
+      {
+        "name": "previous_name",
+        "type": "STRING"
+      },
+      {
+        "name": "previous_type",
+        "type": "STRING"
+      },
+      {
+        "name": "transition_type",
+        "type": "STRING"
+      },
+      {
+        "name": "type",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_mobile_screen_view_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "id",
+        "type": "STRING"
+      },
+      {
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "name": "activity",
+        "type": "STRING"
+      },
+      {
+        "name": "fragment",
+        "type": "STRING"
+      },
+      {
+        "name": "top_view_controller",
+        "type": "STRING"
+      },
+      {
+        "name": "type",
+        "type": "STRING"
+      },
+      {
+        "name": "view_controller",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "contexts_com_snowplowanalytics_mobile_screen_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "name": "unstruct_event_com_snowplowanalytics_mobile_application_install_1_0_0",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "name": "foreground_index",
+        "type": "INTEGER"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_foreground_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "background_index",
+        "type": "INTEGER"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_background_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "name": "programming_language",
+        "type": "STRING"
+      },
+      {
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "name": "is_fatal",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "line_number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "stack_trace",
+        "type": "STRING"
+      },
+      {
+        "name": "thread_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "thread_name",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_error_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "name": "stack_trace",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_diagnostic_error_1_0_0",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "name": "programming_language",
+        "type": "STRING"
+      },
+      {
+        "name": "cause_stack_trace",
+        "type": "STRING"
+      },
+      {
+        "name": "class_name",
+        "type": "STRING"
+      },
+      {
+        "name": "exception_name",
+        "type": "STRING"
+      },
+      {
+        "name": "file_name",
+        "type": "STRING"
+      },
+      {
+        "name": "is_fatal",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "line_column",
+        "type": "INTEGER"
+      },
+      {
+        "name": "line_number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "stack_trace",
+        "type": "STRING"
+      },
+      {
+        "name": "thread_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "thread_name",
+        "type": "STRING"
+      }
+    ],
+    "name": "unstruct_event_com_snowplowanalytics_snowplow_application_error_1_0_2",
+    "type": "RECORD"
+  },
+  {
+    "name": "etl_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "collector_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "dvce_created_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "dvce_sent_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "refr_device_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "derived_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "true_tstamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "name": "browser_ads_ppid",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_ads_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_analytics_id",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_analytics_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_dmp_id",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_dmp_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "browser_ncg_id",
+        "type": "STRING"
+      },
+      {
+        "name": "user_id",
+        "type": "STRING"
+      },
+      {
+        "name": "user_memtype",
+        "type": "STRING"
+      },
+      {
+        "name": "user_newsletter_id",
+        "type": "STRING"
+      },
+      {
+        "name": "user_newsletter_provider",
+        "type": "STRING"
+      },
+      {
+        "name": "user_provider",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "context_aka",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "article_id",
+        "type": "STRING"
+      },
+      {
+        "name": "article_paid_content_type",
+        "type": "STRING"
+      },
+      {
+        "name": "article_published_time",
+        "type": "STRING"
+      },
+      {
+        "name": "article_source",
+        "type": "STRING"
+      },
+      {
+        "name": "content_type",
+        "type": "STRING"
+      },
+      {
+        "name": "section",
+        "type": "STRING"
+      },
+      {
+        "name": "subsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsubsection",
+        "type": "STRING"
+      },
+      {
+        "name": "subsubsubsubsection",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "context_article",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "listing_bathrooms",
+        "type": "INTEGER"
+      },
+      {
+        "name": "listing_bedrooms",
+        "type": "INTEGER"
+      },
+      {
+        "name": "listing_id",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_address",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_city",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_country",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_lat",
+        "type": "FLOAT"
+      },
+      {
+        "name": "listing_location_long",
+        "type": "FLOAT"
+      },
+      {
+        "name": "listing_location_postcode",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_location_state",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_price",
+        "type": "FLOAT"
+      },
+      {
+        "name": "listing_property_id",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_property_type",
+        "type": "STRING"
+      },
+      {
+        "name": "listing_type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "context_relisting",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "search_baths_max",
+        "type": "INTEGER"
+      },
+      {
+        "name": "search_baths_min",
+        "type": "INTEGER"
+      },
+      {
+        "name": "search_beds_max",
+        "type": "INTEGER"
+      },
+      {
+        "name": "search_beds_min",
+        "type": "INTEGER"
+      },
+      {
+        "name": "search_location",
+        "type": "STRING"
+      },
+      {
+        "name": "search_price_max",
+        "type": "FLOAT"
+      },
+      {
+        "name": "search_price_min",
+        "type": "FLOAT"
+      },
+      {
+        "name": "search_property_type",
+        "type": "STRING"
+      },
+      {
+        "name": "search_type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "context_research",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "is_duplicate_row",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_valid_event_domain",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_valid_aka_domain",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "is_suspect_bot",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "acepts_3pc",
+        "type": "BOOLEAN"
+      },
+      {
+        "name": "device_id",
+        "type": "STRING"
+      },
+      {
+        "name": "device_id_type",
+        "type": "STRING"
+      },
+      {
+        "name": "time_on_page",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_page_url",
+        "type": "STRING"
+      },
+      {
+        "name": "last_page_title",
+        "type": "STRING"
+      },
+      {
+        "name": "next_page_url",
+        "type": "STRING"
+      },
+      {
+        "name": "next_page_title",
+        "type": "STRING"
+      }
+    ],
+    "name": "staging",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "name": "duplication_row_num",
+        "type": "INTEGER"
+      },
+      {
+        "name": "matched_datacenter",
+        "type": "STRING"
+      },
+      {
+        "name": "matched_crawler",
+        "type": "STRING"
+      },
+      {
+        "name": "first_network_id",
+        "type": "STRING"
+      },
+      {
+        "name": "second_network_id",
+        "type": "STRING"
+      },
+      {
+        "name": "last_ncg_g_id",
+        "type": "STRING"
+      },
+      {
+        "name": "last_collector_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "next_collector_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "last_derived_tstamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "next_derived_tstamp",
+        "type": "TIMESTAMP"
+      }
+    ],
+    "name": "staging_debug",
+    "type": "RECORD"
+  }
+]
