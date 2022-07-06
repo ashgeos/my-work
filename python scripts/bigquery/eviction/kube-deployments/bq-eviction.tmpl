@@ -1,0 +1,40 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: bq-eviction
+  namespace: airflow
+  labels:
+    app: airflow
+    component: bq-eviction
+spec:
+  schedule: "0 16 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: bq-eviction
+            image: gcr.io/${PROJECT_ID}/bq-eviction:${COMMIT_SHA}
+            args:
+            - python2
+            - eviction.py
+            volumeMounts:
+            - name: airflow-gcp
+              mountPath: "/secrets/gcp"
+              readOnly: true
+            env:
+            - name: DFP_ACCESS_CREDENTIALS
+              value: "/secrets/gcp/dfp_credentials.json"
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/secrets/gcp/credentials.json"
+            - name: NEWSIQ_GCP_PROJECT
+              value: ${PROJECT_ID}
+            - name: NEWSIQ_ENV
+              value: ${ENV}
+            - name: NEWSIQ_BQ_EVICTION_DRY_RUN
+              value: ""
+          restartPolicy: OnFailure
+          volumes:
+          - name: airflow-gcp
+            secret:
+              secretName: airflow-gcp

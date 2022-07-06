@@ -1,0 +1,13 @@
+{
+  "source_project": "ashish-test-dev",
+  "bu": "sp",
+  "env": "prod",
+  "source_enricher_db_bucket": "ncg-prod-enricher-db",
+  "destination_enricher_db_bucket": "sp-ncg-prod-enricher-db",
+  "source_iglu_schemas_bucket": "ncg-prod-iglu-schemas",
+  "destination_iglu_schemas_bucket": "sp-ncg-prod-iglu-schemas",
+  "gke_snowplow_cluster": "sp-snowplow-cluster-prod",
+  "gke_cluster_region": "us-central1",
+  "keybase_secrets_repo": "sp-prod",
+  "collector_domain_name": "v2.pixel.test.com"
+}

@@ -1,0 +1,59 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: bq-eviction-to-aws
+  namespace: airflow
+spec:
+  schedule: "0 0 1 1 *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - command: ["/bin/bash","-c"]
+            args: ["python2 /bq-to-aws-transfer/eviction.py"]
+            name: bq-eviction-policy
+            image: gcr.io/ashish-test/bq-to-aws-transfer:latest
+            volumeMounts:
+            - name: airflow-gcp
+              mountPath: "/secrets/gcp"
+              readOnly: true
+            - name: bq-eviction-to-aws
+              mountPath: /bq-to-aws-transfer/eviction.yml
+              subPath: eviction.yml
+            - name: aws-creds
+              mountPath: /root/.aws
+              readOnly: true
+            env:
+            - name: DFP_ACCESS_CREDENTIALS
+              value: "/secrets/gcp/dfp_credentials.json"
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/secrets/gcp/credentials.json"
+            - name: NEWSIQ_GCP_PROJECT
+              value: "ashish-test"
+            - name: NEWSIQ_ENV
+              value: "prod"
+            - name: NEWSIQ_GCP_EVICTION_LOG_LOCATION
+              value: "/bq-to-aws-transfer/logs"
+            - name: NEWSIQ_GCP_EVICTION_POLICY_LOCATION
+              value: "/bq-to-aws-transfer/policies"
+            - name: NEWSIQ_GCP_EVICTION_STATUS_LOCATION
+              value: "/bq-to-aws-transfer/logs"
+            - name: NEWSIQ_GCP_BQ_DOWNSTREAM_BUFFER
+              value: "3"
+            - name: NEWSIQ_BQ_EVICTION_DRY_RUN
+              value: "False"
+            - name: NEWSIQ_AWS_STORAGE_LOCATION
+              value: "s3://ashish-test-realtor-prod"
+          restartPolicy: OnFailure
+          volumes:
+          - name: airflow-gcp
+            secret:
+              secretName: airflow-gcp
+          - name: bq-eviction-to-aws
+            configMap:
+              name: bq-eviction-to-aws-configmap
+          - name: aws-creds
+            secret:
+              defaultMode: 420
+              secretName: aws-credentials

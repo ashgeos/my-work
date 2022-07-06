@@ -1,0 +1,23 @@
+title: "DBT Populate Datalake"
+description: "Custom role for DBT Populate Datalake DAG."
+stage: "ALPHA"
+includedPermissions:
+- bigquery.datasets.create
+- bigquery.datasets.get
+- bigquery.datasets.update
+- bigquery.jobs.create
+- bigquery.jobs.update
+- bigquery.readsessions.create
+- bigquery.routines.create
+- bigquery.routines.delete
+- bigquery.routines.get
+- bigquery.routines.list
+- bigquery.routines.update
+- bigquery.tables.create
+- bigquery.tables.get
+- bigquery.tables.getData
+- bigquery.tables.list
+- bigquery.tables.update
+- bigquery.tables.updateData
+- storage.objects.get
+- storage.objects.list

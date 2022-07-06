@@ -1,0 +1,11 @@
+{
+    "Comment": "CREATE/DELETE/UPSERT a record ",
+    "Changes": [{
+    "Action": "CREATE",
+                "ResourceRecordSet": {
+                            "Name": "DOMAIN_NAME_VALUE",
+                            "Type": "A",
+                            "TTL": 300,
+                         "ResourceRecords": [{ "Value": "IP_ADDR_VALUE"}]
+}}]
+}

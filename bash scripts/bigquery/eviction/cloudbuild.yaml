@@ -1,0 +1,32 @@
+steps:
+# Call docker build to build the image, using the previous build for caching
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'pull', 'gcr.io/$PROJECT_ID/bq-eviction:latest' ]
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build',
+    '--cache-from', 'us.gcr.io/$PROJECT_ID/bq-eviction:latest',
+    '-t', 'us.gcr.io/$PROJECT_ID/bq-eviction:$COMMIT_SHA', '.']
+  dir: 'tools/bigquery/eviction'
+# Tag the image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['tag', 'us.gcr.io/$PROJECT_ID/bq-eviction:$COMMIT_SHA', 'us.gcr.io/$PROJECT_ID/bq-eviction:latest']
+# Push the image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us.gcr.io/$PROJECT_ID/bq-eviction:$COMMIT_SHA']
+# Remote tag the newly pushed image as latest
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['container', 'images', 'add-tag', 'us.gcr.io/$PROJECT_ID/bq-eviction:$COMMIT_SHA', 'us.gcr.io/$PROJECT_ID/bq-eviction:latest']
+- name: 'debian'
+  args: ['bash', './envsubst.sh']
+  dir: 'tools/bigquery/eviction'
+  env:
+  - 'PROJECT_ID=$PROJECT_ID'
+  - 'COMMIT_SHA=$COMMIT_SHA'
+  - 'ENV=$_ENV'
+# Update the bq-eviction deployment to use the image we just built
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: [ 'apply', '-f', 'bq-eviction.yaml' ]
+  dir: 'tools/bigquery/eviction'
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=$_CLOUDSDK_COMPUTE_ZONE'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=$_CLOUDSDK_CONTAINER_CLUSTER'

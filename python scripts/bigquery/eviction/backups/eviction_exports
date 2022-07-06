@@ -1,0 +1,13 @@
+pypath=`command -v python2`
+#source this file before you try the script
+export NEWSIQ_GCP_EVICTION_PYTHON2_PATH="${pypath}"
+#export NEWSIQ_GCP_PROJECT=newscorp-newsiq
+#export NEWSIQ_ENV=prod
+#export GOOGLE_APPLICATION_CREDENTIALS="/secrets/gcp/credentials.json"
+#export NEWSIQ_GCP_EVICTION_LOG_LOCATION="/eviction/logs"
+#export NEWSIQ_GCP_EVICTION_POLICY_LOCATION="/eviction/policies"
+#export NEWSIQ_GCP_EVICTION_STATUS_LOCATION="/eviction/logs"
+#export NEWSIQ_GCP_BQ_DOWNSTREAM_BUFFER="3"
+#export NEWSIQ_BQ_EVICTION_DRY_RUN="True" 
+#export NEWSIQ_GCP_DF_WORKER_COUNT="50"
+#export NEWSIQ_GCP_DF_MAX_WORKER_COUNT="200"

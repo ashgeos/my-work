@@ -1,0 +1,140 @@
+apiVersion: v1
+data:
+  eviction.yml: |-
+    newsiq_dfp:
+        dj_bids_: delete_no_eviction:5
+        dj_imps_: delete_no_eviction:5
+        dj_reg_imps_: delete_no_eviction:5
+        dj_clicks_: delete_no_eviction:5
+        dj_reg_clicks_: delete_no_eviction:5
+        dj_codeServes_: delete_no_eviction:5
+        dj_reg_codeServes_: delete_no_eviction:5
+        dj_requests_: delete_no_eviction:5
+        dj_reg_requests_: delete_no_eviction:5
+        nyp_bids_: delete_no_eviction:5
+        nyp_imps_: delete_no_eviction:5
+        nyp_reg_imps_: delete_no_eviction:5
+        nyp_clicks_: delete_no_eviction:5
+        nyp_reg_clicks_: delete_no_eviction:5
+        nyp_codeServes_: delete_no_eviction:5
+        nyp_reg_codeServes_: delete_no_eviction:5
+        nyp_requests_: delete_no_eviction:5
+        nyp_reg_requests_: delete_no_eviction:5
+        realtor_bids_: delete_no_eviction:5
+        realtor_imps_: delete_no_eviction:5
+        realtor_reg_imps_: delete_no_eviction:5
+        realtor_clicks_: delete_no_eviction:5
+        realtor_reg_clicks_: delete_no_eviction:5
+        realtor_codeServes_: delete_no_eviction:5
+        realtor_reg_codeServes_: delete_no_eviction:5
+        realtor_requests_: delete_no_eviction:5
+        realtor_reg_requests_: delete_no_eviction:5
+        dj_joined_: delete_no_eviction:4
+        dj_reg_joined_: delete_no_eviction:4
+        realtor_joined_: delete_no_eviction:4
+        realtor_reg_joined_: delete_no_eviction:4
+        nyp_joined_: delete_no_eviction:4
+        nyp_reg_joined_: delete_no_eviction:4
+        backfill_with_segments_: delete_no_eviction:2
+        non_backfill_with_segments_: delete_no_eviction:2
+        dj_activeViews_: delete_no_eviction:5
+        dj_activities_: delete_no_eviction:5
+        dj_reg_activeViews_: delete_no_eviction:5
+        dj_reg_richMediaConversions_: delete_no_eviction:5
+        dj_reg_videoConversions_: delete_no_eviction:5
+        dj_richMediaConversions_: delete_no_eviction:5
+        dj_videoConversions_: delete_no_eviction:5
+        nyp_activeViews_: delete_no_eviction:5
+        nyp_activities_: delete_no_eviction:5
+        nyp_reg_activeViews_: delete_no_eviction:5
+        nyp_reg_richMediaConversions_: delete_no_eviction:5
+        nyp_reg_videoConversions_: delete_no_eviction:5
+        nyp_richMediaConversions_: delete_no_eviction:5
+        nyp_videoConversions_: delete_no_eviction:5
+        realtor_activeViews_: delete_no_eviction:5
+        realtor_activities_: delete_no_eviction:5
+        realtor_reg_activeViews_: delete_no_eviction:5
+        realtor_reg_richMediaConversions_: delete_no_eviction:5
+        realtor_richMediaConversions_: delete_no_eviction:5
+    newsiq_ad_value:
+        backfill_: delete_no_eviction:90
+        non_backfill_: delete_no_eviction:90
+        newsiq_dealid: delete_and_evict:daily@90
+        advertiser_value: delete_and_evict:daily@90
+        adx_dealid: delete_and_evict:daily@90
+        prebid_vs_adx: delete_and_evict:daily@90
+        segment_value: delete_and_evict:daily@90
+        ssp_insights: delete_and_evict:daily@90
+        ssp_insights_participation: delete_and_evict:daily@90
+        segment_value_quantile: delete_and_evict:daily@90
+        newsiq_dealid_quantile: delete_and_evict:daily@90
+    newsiq_prebid:
+        prebid_analytics_: delete_no_eviction:7
+        prebid_temp_staging_: delete_no_eviction:5
+    newsiq_pixel:
+        akagt_: delete_no_eviction:5
+        article_: delete_no_eviction:2
+        relisting_: delete_no_eviction:2
+        research_: delete_no_eviction:2
+        events_: delete_no_eviction:1
+        events_joined_: delete_and_evict:90
+    newsiq_krux:
+        audience_segment_map_: delete_no_eviction:7
+        audience_segments_: delete_no_eviction:7
+        dissent_data_: delete_no_eviction:7
+        partner_user_match_: delete_no_eviction:7
+        segment_map_clean_: delete_no_eviction:7
+    newsiq_pixel_features:
+        nlp_time_features_: delete_no_eviction:1
+        nlp_time_metrics_: delete_no_eviction:1
+        nlp_time_metrics_window_12w_: delete_no_eviction:1
+        nlp_time_metrics_window_1d_: delete_no_eviction:1
+        nlp_time_metrics_window_1w_: delete_no_eviction:1
+        nlp_time_metrics_window_2w_: delete_no_eviction:1
+        nlp_time_metrics_window_4w_: delete_no_eviction:1
+        nlp_time_metrics_window_8w_: delete_no_eviction:1
+        re_features_: delete_no_eviction:2
+        nlp_daily_: delete_no_eviction:100
+    newsiq_id_mappings:
+        news_to_domain_: delete_no_eviction:90
+        news_to_user_: delete_no_eviction:90
+        news_to_aaid_: delete_no_eviction:90
+        news_to_idfa_: delete_no_eviction:90
+        news_to_krux_pum_: delete_no_eviction:2
+        news_to_krux_akagt_: delete_no_eviction:2
+    newsiq_pixel_segments:
+        farsi_language_segments_: delete_no_eviction:1
+        re_segments_: delete_no_eviction:3
+        religious_segments_: delete_no_eviction:1
+        spanish_language_segments_: delete_no_eviction:1
+    newsiq_exports:
+        consent_data_: delete_no_eviction:1
+        nlp_attrs_fpid_02_: delete_no_eviction:1
+        nlp_attrs_fpid_04_: delete_no_eviction:1
+        nlp_attrs_fpid_06_: delete_no_eviction:1
+        nlp_attrs_fpid_08_: delete_no_eviction:1
+        nlp_attrs_fpid_10_: delete_no_eviction:1
+        nlp_attrs_fpid_12_: delete_no_eviction:1
+        nlp_attrs_fpid_pieces_: delete_no_eviction:1
+        nlp_attrs_tpid_: delete_no_eviction:1
+        segments_fpid_: delete_no_eviction:1
+        segments_tpid_: delete_no_eviction:1
+        test_aid_: delete_no_eviction:1
+        test_did_: delete_no_eviction:1
+        test_did_w_uid_: delete_no_eviction:1
+        test_did_wo_uid_: delete_no_eviction:1
+        test_ifa_: delete_no_eviction:1
+        test_kid_: delete_no_eviction:1
+        test_uid_: delete_no_eviction:1
+    live_ramp:
+        IDGraph_AAID: partitioned_delete_no_eviction:1
+        IDGraph_Cookie: partitioned_delete_no_eviction:1
+        IDGraph_IDFA: partitioned_delete_no_eviction:1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-05-22T15:30:04Z"
+  name: bq-eviction-policy-configmap
+  namespace: airflow
+  resourceVersion: "519578105"
+  selfLink: /api/v1/namespaces/airflow/configmaps/bq-eviction-policy-configmap
+  uid: 1bfad879-9c41-11ea-aec8-42010a8e00b9

@@ -1,0 +1,53 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: bq-eviction-policy
+  namespace: airflow
+  labels:
+    app: airflow
+    component: bq-eviction-policy
+spec:
+  schedule: "0 */3 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - command: ["/bin/bash","-c"]
+            args: ["python2 /eviction/eviction.py"]
+            name: bq-eviction-policy
+            image: gcr.io/newscorp-newsiq/bq-eviction-policy:latest
+            volumeMounts:
+            - name: airflow-gcp
+              mountPath: "/secrets/gcp"
+              readOnly: true
+            - name: bq-eviction-policy
+              mountPath: /eviction/eviction.yml
+              subPath: eviction.yml 
+            env:
+            - name: DFP_ACCESS_CREDENTIALS
+              value: "/secrets/gcp/dfp_credentials.json"
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/secrets/gcp/credentials.json"
+            - name: NEWSIQ_GCP_PROJECT
+              value: "newscorp-newsiq"
+            - name: NEWSIQ_ENV
+              value: "prod"
+            - name: NEWSIQ_GCP_EVICTION_LOG_LOCATION
+              value: "/eviction/logs"
+            - name: NEWSIQ_GCP_EVICTION_POLICY_LOCATION
+              value: "/eviction/policies"
+            - name: NEWSIQ_GCP_EVICTION_STATUS_LOCATION
+              value: "/eviction/logs"
+            - name: NEWSIQ_GCP_BQ_DOWNSTREAM_BUFFER
+              value: "3"
+            - name: NEWSIQ_BQ_EVICTION_DRY_RUN
+              value: "True"
+          restartPolicy: OnFailure
+          volumes:
+          - name: airflow-gcp
+            secret:
+              secretName: airflow-gcp
+          - name: bq-eviction-policy
+            configMap:
+              name: bq-eviction-policy-configmap

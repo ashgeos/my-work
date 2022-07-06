@@ -1,0 +1,33 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: bqtable-deletion-policy
+  namespace: airflow
+  labels:
+    app: airflow
+    component: bqtable-deletion-policy
+spec:
+  schedule: "* 23 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: bqtable-deletion-policy
+            image: gcr.io/ashish-test-dev/bqtable-deletion-policy:latest
+            command: ["/bin/sh"]
+            args: ["-c", "/root/scripts/bqtable_deletion_policy.sh --dry_run=false"]
+            volumeMounts:
+            - name: airflow-gcp
+              mountPath: "/secrets/gcp"
+              readOnly: true
+            env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: "/secrets/gcp/credentials.json"
+            - name: NEWSIQ_GCP_PROJECT
+              value: ashish-test-dev
+          restartPolicy: OnFailure
+          volumes:
+          - name: airflow-gcp
+            secret:
+              secretName: airflow-gcp
